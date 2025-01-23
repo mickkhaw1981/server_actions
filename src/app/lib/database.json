@@ -1,0 +1,60 @@
+{
+  "tickets": [
+    {
+      "id": 1,
+      "title": "Implement user authentication",
+      "description": "Add login/signup functionality with JWT authentication",
+      "type": "feature",
+      "status": "in_progress"
+    },
+    {
+      "id": 2,
+      "title": "Fix navigation menu on mobile",
+      "description": "Navigation menu is not responsive on mobile devices",
+      "type": "bug",
+      "status": "open"
+    },
+    {
+      "id": 3,
+      "title": "Add dark mode support",
+      "description": "Users want ability to switch between light and dark themes",
+      "type": "request",
+      "status": "open"
+    },
+    {
+      "id": 4,
+      "title": "Optimize image loading",
+      "description": "Images take too long to load on slower connections",
+      "type": "bug",
+      "status": "done"
+    },
+    {
+      "id": 5,
+      "title": "Add search functionality",
+      "description": "Implement search feature to filter content",
+      "type": "feature",
+      "status": "open"
+    },
+    {
+      "id": 6,
+      "title": "Learning Server Actions",
+      "description": "Lorem ipsum",
+      "type": "feature",
+      "status": "open"
+    },
+    {
+      "id": 7,
+      "title": "Learning JS",
+      "description": "OAD",
+      "type": "feature",
+      "status": "open"
+    },
+    {
+      "id": 8,
+      "title": "ASAS",
+      "description": "ASAS",
+      "type": "feature",
+      "status": "open"
+    }
+  ]
+}
