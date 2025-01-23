@@ -12,7 +12,7 @@ export default function Home() {
           <h1 className="text-3xl font-bold text-white">Tickets</h1>
           <div className="space-x-4">
             <Link 
-              href="/ticket/create"
+              href="/ticket/server/create"
               className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700"
             >
               Create Ticket (Server)

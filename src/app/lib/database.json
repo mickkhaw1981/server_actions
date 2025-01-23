@@ -48,6 +48,20 @@
       "description": "OAD",
       "type": "feature",
       "status": "open"
+    },
+    {
+      "id": 8,
+      "title": "Learn Spanish",
+      "description": "Hola",
+      "type": "feature",
+      "status": "open"
+    },
+    {
+      "id": 9,
+      "title": "Learn English",
+      "description": "Lorem",
+      "type": "feature",
+      "status": "open"
     }
   ]
 }
