@@ -66,17 +66,26 @@ export default function Home() {
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm">
-                    <form action={async () => {
-                      'use server';
-                      await deleteTicket(ticket.id);
-                    }}>
-                      <button
-                        type="submit"
-                        className="text-red-600 hover:text-red-900 font-medium"
+                    <div className="flex items-center space-x-4">
+                      <Link
+                        href={`/ticket/server/edit/${ticket.id}`}
+                        className="text-indigo-600 hover:text-indigo-900 font-medium"
                       >
-                        Delete
-                      </button>
-                    </form>
+                        Edit
+                      </Link>
+                      <span className="text-gray-300">|</span>
+                      <form action={async () => {
+                        'use server';
+                        await deleteTicket(ticket.id);
+                      }}>
+                        <button
+                          type="submit"
+                          className="text-red-600 hover:text-red-900 font-medium"
+                        >
+                          Delete
+                        </button>
+                      </form>
+                    </div>
                   </td>
                 </tr>
               ))}

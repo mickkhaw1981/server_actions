@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Implement user authentication",
       "description": "Add login/signup functionality with JWT authentication",
-      "type": "feature",
+      "type": "request",
       "status": "in_progress"
     },
     {
