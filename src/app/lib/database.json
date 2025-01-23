@@ -48,13 +48,6 @@
       "description": "OAD",
       "type": "feature",
       "status": "open"
-    },
-    {
-      "id": 8,
-      "title": "ASAS",
-      "description": "ASAS",
-      "type": "feature",
-      "status": "open"
     }
   ]
 }

@@ -44,29 +44,3 @@ export async function deleteTicket(ticketId: number) {
   // Return a success response
   return { success: true };
 }
-
-export async function updateTicket(formData: FormData) {
-  const id = parseInt(formData.get('id') as string);
-  const title = formData.get('title') as string;
-  const description = formData.get('description') as string;
-  const type = formData.get('type') as 'feature' | 'bug' | 'request';
-  const status = formData.get('status') as 'open' | 'in_progress' | 'done';
-
-  const data = readFile();
-  const ticketIndex = data.tickets.findIndex(t => t.id === id);
-  
-  if (ticketIndex === -1) {
-    throw new Error('Ticket not found');
-  }
-
-  data.tickets[ticketIndex] = {
-    ...data.tickets[ticketIndex],
-    title,
-    description,
-    type,
-    status
-  };
-
-  writeFile(data);
-  redirect('/');
-}
