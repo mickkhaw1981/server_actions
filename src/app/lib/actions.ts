@@ -50,7 +50,7 @@ export async function updateTicket(formData: FormData) {
   const title = formData.get('title') as string;
   const description = formData.get('description') as string;
   const type = formData.get('type') as 'feature' | 'bug' | 'request';
-  const status = formData.get('status') as 'open' | 'in_progress' | 'closed';
+  const status = formData.get('status') as 'open' | 'in_progress' | 'done';
 
   // Read existing tickets
   const data = readFile();
